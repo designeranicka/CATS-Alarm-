@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activities.AlarmActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:scaleType="fitXY"
+        android:src="@drawable/background_create_alarm"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textMyAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:fontFamily="@font/ubuntu_bold"
+        android:includeFontPadding="false"
+        android:text="@string/my_alarm"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_20ssp"
+        android:layout_above="@+id/textClock" />
+
+    <ImageView
+        android:id="@+id/imageAddAlarm"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/kitty_icon"
+        android:contentDescription="@string/app_name"
+        android:paddingStart="@dimen/_12sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_4ssp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_add_outline"
+        app:tint="@color/orangeLight" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="alarms"
+        android:textColor="#D88F5113"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="city settings"
+        android:textColor="#D88F5113"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/cityText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="loading..."
+        android:textColor="#A48F5113"
+        android:textSize="45sp"
+        tools:ignore="HardcodedText" />
+
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="150dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="@string/What_time_is_it"
+        android:textColor="@color/orangeDark"
+        android:textSize="50dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corner"
+        android:elevation="3dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_menu" />
+
+</RelativeLayout>

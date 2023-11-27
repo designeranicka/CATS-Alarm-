@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_create_alarm"
+    tools:context=".activities.AlarmOnActivity">
+
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--    <pl.droidsonroids.gif.GifImageView-->
+<!--        android:id="@+id/gifBackOnAlarm"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/rainy_w" />-->
+    <ImageView
+        android:id="@+id/felix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/felix_foto"
+        android:scaleType="fitXY"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="150dp">
+
+        <TextClock
+            android:id="@+id/textClockAlarm"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:text="17:38"
+            android:textColor="#C57F69"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#FF5722"
+            android:textColorLink="#FF5722"
+            android:textSize="80dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/button_alarm_off2"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="200dp"
+        android:src="@drawable/button_sun" />
+<!--    </RelativeLayout>-->
+
+</FrameLayout>

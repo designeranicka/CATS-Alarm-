@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.AlarmOnActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifBackOnAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/rainy_w"
+        android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/felix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/felix_foto"
+            android:scaleType="fitXY" />
+
+        <TextClock
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="80dp"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <ImageView
+            android:id="@+id/button_alarm_off"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="200dp"
+            android:src="@drawable/button_rain" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

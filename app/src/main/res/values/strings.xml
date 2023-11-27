@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Felix alarm+</string>
+    <string name="my_notes">My Notes</string>
+    <string name="search_notes">Search notes</string>
+    <string name="note_title">Note title</string>
+    <string name="note_subtitle">Note Subtitle</string>
+    <string name="type_note_here">Type note here..</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="pick_color">Pick Color</string>
+    <string name="add_image">Add Image</string>
+    <string name="add_url">Add URl</string>
+    <string name="enter_url">Enter URl</string>
+    <string name="add">ADD</string>
+    <string name="cancel_dialog">CANCEL</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="my_alarm">My Alarm</string>
+    <string name="are_you_sure_you_want_to_delete_this_note">Are you sure you want to delete this note?</string>
+    <string name="timeButton">Select time</string>
+    <string name="setAlarmName">Alarm name</string>
+    <string name="alarmBack">Back</string>
+    <string name="alarmSave">Save</string>
+    <string name="What_time_is_it">08:35pm</string>
+    <string-array name="alarmName">
+
+
+    </string-array>
+
+    <string-array name="alarmTime">
+
+
+    </string-array>
+
+</resources>
